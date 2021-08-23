@@ -15,13 +15,13 @@
             this.price = price;
         }
 
-        Product.prototype.make25PercentDiscount = function() {
-            alert(this.name);
-            alert(this.price);
+        Product.prototype.price = function() {
+            console.log(obj1.price);
         };
 
-        let obj1 = new Product('text', 'sale25');
-        obj1.make25PercentDiscount();
+        let obj1 = new Product('text', 500);
+        obj1.price = obj1.price - obj1.price * 25 /100;
+        console.log(obj1.price);
 
     </script>
 </body>
