@@ -15,8 +15,8 @@
             this.price = price;
         }
 
-        Product.prototype.price = function() {
-            console.log(obj1.price);
+        Product.prototype.make25PersentDiscount = function() {
+            this.price = this.price - this.price * 25 / 100;
         };
 
         let obj1 = new Product('text', 500);

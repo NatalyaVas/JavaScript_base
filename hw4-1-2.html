@@ -17,13 +17,13 @@
             }
 
             make25PercentDiscount() {
-                alert(this.name);
-                alert(this.price); 
+                this.price = this.price - this.price * 25 / 100;
             }
         }
 
-        let obj1 = new Product('text', 'sale25');
+        let obj1 = new Product('text', '500');
         obj1.make25PercentDiscount();
+        console.log(obj1.price);
     </script>
 </body>
 </html>

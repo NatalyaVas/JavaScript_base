@@ -16,8 +16,8 @@
             this.date = date;
         }
 
-        Post.prototype.edit = function() {
-            alert(this.text);
+        Post.prototype.edit = function(text) {
+            this.text = text;
         };
 
         function AttachedPost(author,text, date) {

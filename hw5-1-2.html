@@ -16,13 +16,13 @@
                 this.date = date;
             }
 
-            edit() {
-                alert(this.text);
+            edit(text) {
+                this.text = text;
             } 
         }
 
         class AttachedPost extends Post {
-            constructor(author, text, date, highlighted) {
+            constructor(author, text, date) {
                 super (author, text, date);
                 this.highlighted = false;
             }
